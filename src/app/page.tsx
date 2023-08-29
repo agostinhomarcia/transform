@@ -70,7 +70,7 @@ const App: React.FC = () => {
           onChange={handleInputChange}
         ></textarea>
 
-        <div className="buttons mt-4 space-y-4 md:space-y-0 md:flex md:space-x-4 bg-slate-600 p-4 rounded-md">
+        <div className="buttons mt-4 space-y-4 bg-slate-600 p-4 rounded-md">
           <div className="grid grid-cols-2 gap-4">
             <button
               className="bg-slate-800 text-slate-100 p-2 rounded-md"
