@@ -55,28 +55,12 @@ const App: React.FC = () => {
     return text.toLowerCase().replace(/\s+/g, "_");
   };
 
-  // const timeToDateString = (timeString: string): string => {
-  //   console.log("cliquei");
-  //   const time = parseInt(timeString);
-  //   if (isNaN(time)) return "";
-  //   const date = new Date(time);
-  //   return date.toLocaleDateString("pt-BR", {
-  //     weekday: "long",
-  //     year: "numeric",
-  //     month: "2-digit",
-  //     day: "2-digit",
-  //     hour: "2-digit",
-  //     minute: "2-digit",
-  //     second: "2-digit",
-  //   });
-  // };
-
   const currentDateTimeString = (): string => {
     return new Date().getTime().toString();
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+    <div className="min-h-screen flex flex-col items-center bg-gray-900">
       <div className="bg-gray-700 p-6 rounded-lg shadow-lg w-full max-w-2xl">
         <textarea
           className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 text-slate-800"
@@ -86,7 +70,7 @@ const App: React.FC = () => {
           onChange={handleInputChange}
         ></textarea>
 
-        <div className="buttons mt-4 space-y-4 bg-slate-600 p-4 rounded-md">
+        <div className="md:grid-cols-2 lg:grid-cols-4">
           <div className="grid grid-cols-2 gap-4">
             <button
               className="bg-slate-800 text-slate-100 p-2 rounded-md"
@@ -150,13 +134,6 @@ const App: React.FC = () => {
           </div>
 
           <div className="flex space-x-4">
-            {/* <button
-              className="bg-slate-800 text-slate-100 p-2 rounded-md"
-              type="button"
-              onClick={() => handleButtonClick(timeToDateString)}
-            >
-              Time p/ Data
-            </button> */}
             <button
               className="bg-slate-800 text-slate-100 p-2 rounded-md"
               type="button"
