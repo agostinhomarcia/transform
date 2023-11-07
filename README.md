@@ -44,10 +44,29 @@
 </p>
 <br/>
 <p align="left">
-  This project is a web application developed in React.
-The application allows users to enter text into a text box and apply various text transformations to it, displaying the result of the transformations in real time.
+This project is a web application developed in React, a popular JavaScript library for creating interactive user interfaces. The application allows users to enter text into a text box and apply various text transformations to it, displaying the result of the transformations in real time. Additionally, the application provides information about the size of the resulting text and allows users to copy the result to the clipboard.
 
-The application offers a variety of text transformations such as capitalization, first letter capitalization, word capitalization, lowercase conversion, and formatting in different styles such as PascalCase, camelCase, kebab-case, and snake_case. Additionally, there is an option to display the current date and time in milliseconds
+Technologies used in the project:
+
+React: The JavaScript library for creating interactive user interfaces.
+
+React Hooks (useState): To manage the state of the application, allowing reactivity to changes in input text and output.
+
+Tailwind CSS: A CSS framework that facilitates the development of responsive and stylistically pleasing user interfaces by applying predefined CSS classes.
+
+JavaScript: The programming language used to create text transformation, interactivity, and DOM manipulation functions.
+
+HTML: The markup language used to create the application structure, including the text box, buttons, and result display elements.
+
+Clipboard API: To allow copying the generated result to the user's clipboard.
+
+Date API: To get the current date and time and convert to millisecond format.
+
+The application offers a variety of text transformations such as capitalization, first letter capitalization, word capitalization, lowercase conversion, and formatting in different styles such as PascalCase, camelCase, kebab-case, and snake_case. Additionally, there is an option to display the current date and time in milliseconds.
+
+The result of the transformations is displayed in real time, along with the size of the resulting text. The application also provides an informational message that indicates when the result has been successfully copied to the clipboard.
+
+Overall, this project demonstrates the creation of an interactive and responsive web interface using React, styled with Tailwind CSS, and provides practical text transformation functionality, as well as useful features such as copying the result to the clipboard.
 
 </p>
 
